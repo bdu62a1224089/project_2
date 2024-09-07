@@ -1,0 +1,151 @@
+*{
+  font-family: Sans-Serif,Times New Roman,Trebuchet MS;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+html{
+  font-size: 63px;
+  overflow-x: hidden;
+}
+.navbar{
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  background: #081;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 30px;
+}
+.header .navbar a{
+  color: #ededed;
+  transition: .2s;
+}
+.header .navbar a:hover{
+  color: #c63bfa;
+}
+.Foods{
+  display:inline-block;
+  padding:30px 20px;
+  grid-column-gap:20px;
+  grid-row-gap:30px;
+}
+.Foods img{
+  object-fit: cover;
+  cursor: pointer;
+  transition: 2s;
+  height:30%;
+  width:100%;
+  text-align: center;
+  border-radius:1rem;
+  box-shadow: 0 .2rem 3rem rgba(0,0,0,.5);
+  margin:2rem;
+  cursor:pointer;
+    }
+h1{
+  color:orangered;
+  text-align:center;
+}
+.contact{
+  font-size: 30px;
+}
+.contactme{
+  width: 100%;
+  justify-content: space-between;
+}
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    z-index: 1100;
+}
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #1f1f1f;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+.menu-toggle.open .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 5px);
+}
+
+.menu-toggle.open .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.open .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -5px);
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+}
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100px;
+        right: 0;
+        background-color: white;
+        width: 100%;
+    }
+
+    .navbar ul {
+        display: none;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+.socialicons a{
+  text-decoration: none;
+  padding: 10px;
+  background: white;
+  margin: 10px;
+  border-radius: 50%;
+}
+.socialicons a i{
+  color: blue;
+  opacity: 0.9;
+}
+.socialicons a:hover{
+  transform: scale(0.5s);
+  color: #0ef;
+}
+.socialicons a:hover i{
+  background: #0ef;
+  color: #000;
+  box-shadow: 0 0 20px #0ef;
+}
+  .header{
+    font-size: 55%;
+  }
+  .navbar{
+    font-size: 45%;
+  }
+  .Foods img{
+    width: 60%;
+    height: 30%;
+  }
+  .Foods h1{
+    font-size:40px;
+  }
+}

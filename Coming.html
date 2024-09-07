@@ -1,0 +1,64 @@
+<html>
+  <head>
+    <style>
+      .container{
+text-transform: uppercase;
+text-align: center;
+}
+body{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h1{
+font-size: 80px;
+margin-bottom: 40px;
+}
+h3{
+font-size: 30px;
+font-weight: 400;
+letter-spacing: 8px;
+margin-bottom: 20px;
+}
+.progress-bar{
+  width: 360px;
+  height: 12px;
+  background-color: #081b29;
+  margin: auto;
+  margin-bottom: 100px;
+  opacity: .8;
+  position: relative;
+}
+.progress-bar::before{
+  content: "0%";
+  position: absolute;
+  left: 0;
+  font-size: 12px;
+  bottom: -18px;
+}
+.progress-bar::after{
+  content: "100%";
+  position: absolute;
+  right: 0;
+  font-size: 12px;
+  bottom: -18px;
+}
+.progress-bar span{
+  display: block;
+  width: 80%;
+  height: 12px;
+  background-color: #87b1d9;
+  animation: fill 1s ease-in 1;
+}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1></h1>
+      <h1>Coming soon</h1>
+      <h3>Site Nearly Ready</h3>
+      <div class="progress-bar"><span></span></div>
+    </div>
+  </body>
+</html>

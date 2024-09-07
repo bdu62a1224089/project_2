@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Restaurant</title>
+    <link rel="stylesheet" href="Pfood.css">
+    <script src="new.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar container">
+            <div class="logo">
+                <a href="#">Tasty Eats</a>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Product</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li>
+                    <button class="cart-details-btn">
+                        <i class="cart-icon">&#128722;</i>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div id="notification" class="notification">
+        <p>Item added to cart!</p>
+    </div>
+    <main>
+        <section class="items">
+            <div class="item">
+                <img src="vegpizza.jpeg" alt="Veg Pizza">
+                <h2>Veg Pizza</h2>
+                <p>Price: $199</p>
+                <button class="add-to-cart" data-name="Veg Pizza" data-price=" $199">Add to Cart</button>
+            </div>
+            <div class="item">
+                <img src="nonvegpizza.jpeg" alt="Non-Veg Pizza">
+                <h2>Non-Veg Pizza</h2>
+                <p>Price: $159</p>
+                <button class="add-to-cart" data-name="Non-Veg Pizza" data-price=" $159">Add to Cart</button>
+            </div>
+            <div class="item">
+                <img src="vegbiriyani.jpeg" alt="Veg Biriyani">
+                <h2>Veg Biriyani</h2>
+                <p>Price: $230</p>
+                <button class="add-to-cart" data-name="Veg Biriyani" data-price=" $23o">Add to Cart</button>
+            </div>
+            <div class="item">
+                <img src="chickenbiriyani.jpeg" alt="Chicken Biriyani">
+                <h2>Chicken Biriyani</h2>
+                <p>Price: $250</p>
+                <button class="add-to-cart" data-name="Chicken Biriyani" data-price=" $250">Add to Cart</button>
+            </div>
+            <div class="item">
+                <img src="muttonbiriyani.jpeg" alt="Mutton Biriyani">
+                <h2>Mutton Biriyani</h2>
+                <p>Price: $450</p>
+                <button class="add-to-cart" data-name="Mutton Biriyani" data-price=" $450">Add to Cart</button>
+            </div>
+            <div class="item">
+                <img src="vegpasta.jpeg" alt="Veg Pasta">
+                <h2>Veg Pasta</h2>
+                <p>Price: $100</p>
+                <button class="add-to-cart" data-name="Veg pasta" data-price=" $100">Add to Cart</button>
+            <div class="item">
+                <img src="nonvegpasta.jpeg" alt="Non-Veg Pasta">
+                <h2>Non-Veg Pasta</h2>
+                <p>Price: $149</p>
+                <button class="add-to-cart" data-name="Non-Veg Pasta" data-price=" $149">Add to Cart</button>
+            </div>
+            <div class="item">
+                <img src="vegburger.jpeg" alt="Veg Burger">
+                <h2>Veg Burger</h2>
+                <p>Price: $120</p>
+                <button class="add-to-cart" data-name="Veg Burger" data-price=" $120">Add to Cart</button>
+            </div>
+            <div class="item">
+                <img src="nonvegburger.jpeg" alt="Non-Veg Burger">
+                <h2>Non-Veg Burger</h2>
+                <p>Price: $160</p>
+                <button class="add-to-cart" data-name="non-Veg Burger" data-price=" $160">Add to Cart</button>
+            </div>
+        </section>
+        
+        <!-- Modal for Food Details -->
+        <div id="cart" class="cart">
+            <h2>Cart Details</h2>
+            <ul class="cart-items">
+            </ul>
+            <i class="close-cart">&times;</i>
+        </div>
+    </main>
+    <script src="new.js"></script>
+</body>
+</html>
